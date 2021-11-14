@@ -1,19 +1,90 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name= "viewport" content="=width=device-width, initial-scale=1.0">
-    <title>HST Course Checkout</title>
-  </head>
-  <body>
-    <script> 
-    fetch ("courses.json")
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="=width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>HST Course Checkout</title>
+</head>
+
+<body>
+  <script>
+    fetch("courses.json")
       .then(Response => response.json())
       .then(data => {
-        console. log(data)
-        document.querySelector("#debug").innertText = 
+        console.log(data)
+        document.querySelector("#debug").innertText =
       })
-    </script>
-    
-  </body>
+  </script>
+
+  <div class="container">
+    <div class="row mt-4">
+      <div class="col mt-4">
+        <div class="card">
+          <div> 
+            <img class="card-img-top" src="https://www.highspeedtraining.co.uk/Site.Cms.Media/Products/level2-food-hygiene-safety-catering/reskin-level-2-food-hygiene-catering.jpg">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Course title 01</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <div class="card-body js_card-links">
+          <div class="form-group">
+            <label for=purchase 01>Items to purchase</label>
+            <input class="js_item_count form-control" id="purchase-01" type="number" value="1" min="1" max="100">
+          </div>
+          <div class="button">
+          <button class="btn btn-primary btn-lg btn-block">Add to basket</button>
+            <button class="btn btn-secondary btn-lg btn-block">More Info</button>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="col mt-4">
+        <div class="card">
+          <div> 
+            <img class="card-img-top" src="https://www.highspeedtraining.co.uk/Site.Cms.Media/Products/level2-food-hygiene-safety-catering/reskin-level-2-food-hygiene-catering.jpg">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Course title 02</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <div class="card-body js_card-links">
+          <div class="form-group">
+            <label for=purchase 02>Items to purchase</label>
+            <input class="js_item_count form-control" id="purchase-02" type="number" value="1" min="1" max="100">
+          </div>
+          <div>
+            <button class="btn btn-primary btn-lg btn-block">Add to basket</button>
+            <button class="btn btn-secondary btn-lg btn-block">More Info</button>
+          </div>
+        </div>
+      </div>
+      </div>
+        <div class="col mt-4">
+        <div class="card">
+          <div> 
+            <img class="card-img-top" src="https://www.highspeedtraining.co.uk/Site.Cms.Media/Products/level2-food-hygiene-safety-catering/reskin-level-2-food-hygiene-catering.jpg">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Course title 03</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <div class="card-body js_card-links">
+          <div class="form-group">
+            <label for=purchase 02>Items to purchase</label>
+            <input class="js_item_count form-control" id="purchase-03" type="number" value="1" min="1" max="100">
+          </div>
+          <div>
+            <button class="btn btn-primary btn-lg btn-block">Add to basket</button>
+            <button class="btn btn-secondary btn-lg btn-block">More Info</button>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
